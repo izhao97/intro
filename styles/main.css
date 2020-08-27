@@ -1,3 +1,8 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{ 
     background-color: #e8f4f8;
 }
@@ -44,4 +49,37 @@ body{
 .aboutButton:hover {
     background-color: #555555;
     color: white;
+}
+
+#sidebar{
+    position:fixed;
+    width: 200px;
+    height: 100%;
+    background: black;
+    left: -200px;
+}
+
+#sidebar.active{
+    left: 0px
+}
+
+#sidebar ul li{
+    color: white;
+    list-style: none;
+    padding: 15px 30px;
+    border-bottom: 1px solid grey;
+}
+
+#sidebar .navigation-pages {
+    position: absolute; 
+    top: 20px;
+    left: 230px;
+}
+
+#sidebar .navigation-pages span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: black;
+    margin: 5px 0px;
 }
