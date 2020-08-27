@@ -4,13 +4,13 @@ body{
 
 #intro{
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 10%;
 }
 
 #welcome{ 
     position:fixed;
-    top: 40%;
+    top: 45%;
     left: 20%;
 }
 
