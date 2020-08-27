@@ -11,14 +11,39 @@
 
 <body>
     <div id="intro">
-        <h1> Hello! My name is Iris Zhao </h1>
+        <h1 class ="message"> Hello! My name is Iris Zhao  </h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script> 
+            var textWrapper = document.querySelector('.message');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.message .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            });
+        </script>  
     </div> 
 
-    <div id ="welcome">
-        <h1>Welcome to my personal projects page </h1>
-    </div> 
+     <div id ="welcome">
+        <h1 class = "message2">Welcome to my personal projects page </h1>
+    </div>  
+        <script> 
+            var textWrapper = document.querySelector('.message2');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.message2 .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            });
+        </script>  
     <div id = "about">
-        <button class = "aboutButton" type = "button" onclick="document.location='about.html'"> About Me </button>
+        <button class = "aboutButton" type = "button" onclick="document.location='about.html'"> About Me &raquo </button>
     </div>
 
 </body>
