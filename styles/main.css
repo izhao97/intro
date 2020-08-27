@@ -1,7 +1,31 @@
-div {
-    vertical-align: center;
+body{ 
+    background-color: #CCEFFC;
+}
+
+#intro{
+    position: fixed;
+    top: 30%;
+    left: 10%;
+}
+
+#welcome{ 
+    position:fixed;
+    top: 40%;
+    left: 20%;
+}
+
+#about{ 
+    position: fixed;
+    top: 55%;
+    left: 75%;
 }
 
 h1{
-    color: blue;
+    color: black;
+    font-size: 3em;
 }
+
+.aboutButton{ 
+    background-color: blue;
+}
+
