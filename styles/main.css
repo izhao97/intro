@@ -28,6 +28,7 @@ body{
 .message2{
     color: black;
     font-size: 3em;
+    animation-delay: 1000s;
 }
 
 .aboutButton{ 
