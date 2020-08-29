@@ -51,12 +51,13 @@ body{
     color: white;
 }
 
+/* sidebar 1 
 #sidebar{
     position:fixed;
     width: 200px;
     height: 100%;
     background: white;
-    /* left: -200px; */
+
 }
 
 #sidebar.active{
@@ -90,14 +91,16 @@ a:link{
     position: relative;
     color: black;
 }
-/* effect 1 
+*/
+
+/* effect 1 for sidebar 1 
  a:hover{
     font-weight: bold; 
     font-size: 22px;
 }  
 */
 
-/* effect 2 */ 
+/* effect 2  for sidebar 1
 a::after{
     content: "";
     background: white;
@@ -118,4 +121,5 @@ a::after{
     text-decoration: none;
     color: black;
   }
+  */
 
