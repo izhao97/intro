@@ -51,6 +51,8 @@ body{
     color: white;
 }
 
+
+
 /* sidebar 1 
 #sidebar{
     position:fixed;
@@ -122,4 +124,45 @@ a::after{
     color: black;
   }
   */
+
+/* Code for Horizontal Sidebar with hover effect 2*/
+#sidebar { 
+    padding: 10px 20px;
+}
+#sidebar ul li{ 
+    float: right;
+    list-style: none;
+}
+
+a:link{
+    text-decoration:none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 30px;
+    color: black;
+}
+
+a::after{
+    content: "";
+    background: white;
+      mix-blend-mode: exclusion;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  a:hover::after{
+      height: calc(100% + 8px)
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  
 
